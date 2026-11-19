@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sites para negócios de BH · Augusto Fonte</title>
+<meta name="description" content="Site com a cara do seu negócio, pronto em 48 horas, com WhatsApp, mapa, avaliações do Google e 1 ano de hospedagem, por R$ 500. Por Augusto Fonte, designer em BH."><meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1F0C33;--soft:#5b4a6e;--roxo:#AF5EFF;--lilas:#D9B3FF;--bg:#FAF5FF;--card:#fff;--linha:#eadcf9;
+--sans:"Schibsted Grotesk",system-ui,-apple-system,sans-serif;--mono:"Geist Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+.w{max-width:1060px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+.rot{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--roxo)}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.01em}.logo span{color:var(--roxo)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--roxo);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 24px;font-size:16px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px var(--roxo)}
+.btn.sm{padding:10px 18px;font-size:14.5px}
+.btn.lin{background:transparent;color:var(--ink);border:1.5px solid var(--linha)}
+.hero{padding:46px 0 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1.titulo{font-size:clamp(40px,6vw,68px);line-height:1;font-weight:800;letter-spacing:-.03em;margin:14px 0 18px}
+.hero h1.titulo em{font-style:normal;color:var(--roxo)}
+.hero p{font-size:19px;color:var(--soft);margin:0 0 26px;max-width:540px}
+.acoes{display:flex;gap:12px;flex-wrap:wrap}
+.provas{display:flex;gap:24px;flex-wrap:wrap;margin-top:30px;font-size:14.5px;color:var(--soft)}
+.provas b{display:block;font-size:28px;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+/* mockup celular */
+.cel{justify-self:center;width:min(300px,80vw);aspect-ratio:9/18.5;background:var(--ink);border-radius:44px;padding:12px;box-shadow:0 40px 80px -40px rgba(31,12,51,.55);position:relative}
+.tela{background:#FBF6F3;border-radius:34px;height:100%;overflow:hidden;display:flex;flex-direction:column}
+.tela .fx{background:#1F0C33;color:#D9B3FF;font:600 9px var(--sans);padding:6px;text-align:center}
+.tela .in{padding:20px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+.tela .nm{font:600 13px Georgia,serif;color:#2A1A1F}
+.tela .ey{font:700 8px var(--sans);letter-spacing:.14em;color:#C9877F}
+.tela .h{font:500 27px/1.04 Georgia,serif;color:#2A1A1F}
+.tela .p{font-size:10.5px;color:#6E5960;line-height:1.5}
+.tela .b{background:#C9877F;color:#fff;border-radius:999px;font:700 10.5px var(--sans);padding:9px 12px;text-align:center}
+.tela .n{background:#fff;border-radius:999px;font-size:9.5px;padding:6px 10px;color:#2A1A1F;align-self:flex-start}
+.tela .img{flex:1;border-radius:90px 90px 16px 16px;background:radial-gradient(circle at 30% 30%,#e4b2aa,transparent 60%),linear-gradient(160deg,#F1DCD6,#dcaea6);min-height:120px}
+.zap{position:absolute;right:-14px;bottom:70px;background:#25D366;color:#fff;font-weight:700;font-size:13px;border-radius:14px;padding:10px 14px;box-shadow:0 12px 24px -10px rgba(0,0,0,.35)}
+section{padding:64px 0}
+h2.sec{font-size:clamp(30px,4.2vw,44px);line-height:1.06;font-weight:800;letter-spacing:-.02em;margin:10px 0 26px;max-width:700px}
+.dois{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.op{background:var(--card);border:1px solid var(--linha);border-radius:24px;padding:30px}
+.op.escuro{background:var(--ink);color:#fff;border-color:var(--ink)}
+.op.escuro .rot{color:var(--lilas)}
+.op h3{font-size:26px;margin:10px 0 6px;letter-spacing:-.01em}
+.preco{font-size:42px;font-weight:800;letter-spacing:-.03em;margin:12px 0 2px}
+.preco small{font:500 13px var(--mono);opacity:.7;letter-spacing:0}
+.op ul{padding-left:0;list-style:none;margin:16px 0 22px}
+.op li{padding:6px 0 6px 28px;position:relative}
+.op li::before{content:"✓";position:absolute;left:0;color:var(--roxo);font-weight:800}
+.op.escuro li::before{color:var(--lilas)}
+.op.escuro .btn{background:#fff;color:var(--ink)}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:p}
+.passo{background:var(--card);border:1px solid var(--linha);border-radius:22px;padding:26px}
+.passo::before{counter-increment:p;content:"0" counter(p);font:500 13px var(--mono);color:#fff;background:var(--roxo);border-radius:999px;padding:4px 10px}
+.passo h3{margin:14px 0 6px;font-size:21px}
+.passo p{margin:0;color:var(--soft);font-size:15.5px}
+.quem{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center;background:var(--card);border:1px solid var(--linha);border-radius:28px;padding:34px}
+.quem .av{aspect-ratio:1;border-radius:24px;background:linear-gradient(140deg,var(--roxo),var(--ink));display:grid;place-items:center;color:#fff;font-size:64px;font-weight:800;letter-spacing:-.04em}
+.cli{background:var(--card);border:1px solid var(--linha);border-radius:20px;padding:20px 22px}.cli b{display:block;font-size:18px}.cli span{color:var(--soft);font-size:14.5px}
+.faq details{background:var(--card);border:1px solid var(--linha);border-radius:18px;padding:18px 22px;margin-bottom:10px}
+.faq summary{font-weight:700;cursor:pointer;font-size:17.5px}
+.faq p{margin:10px 0 0;color:var(--soft)}
+.final{background:var(--ink);color:#fff;border-radius:32px;text-align:center;padding:64px 24px;margin:30px 0 70px}
+.final h2{font-size:clamp(32px,5vw,52px);line-height:1.04;font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+.final p{color:#d9c8f0;margin:0 0 26px}
+.final .btn{background:#fff;color:var(--ink)}
+footer{padding:0 0 90px;color:var(--soft);font-size:14px;text-align:center}
+.flutua{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 20px;box-shadow:0 12px 28px -10px rgba(0,0,0,.4);z-index:5}
+@media (max-width:820px){.hero,.dois,.quem{grid-template-columns:1fr}.passos{grid-template-columns:1fr}.cel{margin-top:10px}.zap{right:-6px}}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="top"><div class="logo">Augusto<span>.</span>Fonte</div><a class="btn sm" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio.">Falar comigo</a></header>
+
+<div class="hero">
+ <div>
+  <div class="rot">Sites para negócios de BH</div>
+  <h1 class="titulo">Seu negócio é bem avaliado. <em>Falta o site.</em></h1>
+  <p>Quem procura você no Google, ou pergunta ao ChatGPT, precisa achar uma página bonita, rápida e com o botão do WhatsApp. Eu monto o seu site com a cara da sua marca, você vê pronto antes de pagar, e em 48 horas ele está no ar.</p>
+  <div class="acoes"><a class="btn" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20ver%20a%20pr%C3%A9via%20do%20meu%20site.">Quero minha prévia grátis</a><a class="btn lin" href="#precos">Ver preços</a></div>
+  <div class="provas"><div><b>8+ anos</b>como designer</div><div><b>8 sites</b>no ar</div><div><b>2.000+</b>peças criadas</div></div>
+ </div>
+ <div class="cel" aria-hidden="true"><div class="tela"><div class="fx">exemplo de prévia</div><div class="in">
+  <div class="nm">Sua Clínica</div><div class="ey">CLÍNICA DE ESTÉTICA · SAVASSI</div>
+  <div class="h">Pele cuidada com carinho.</div><div class="p">Limpeza de pele, cílios e tratamentos com uma equipe que acolhe.</div>
+  <div class="b">Agendar pelo WhatsApp</div><div class="n">★ 5,0 · 190 avaliações no Google</div><div class="img"></div>
+ </div></div><div class="zap">Agendar pelo WhatsApp</div></div>
+</div>
+
+<section id="precos">
+ <div class="rot">Dois caminhos</div>
+ <h2 class="sec">Não tem site ou tem um que não ajuda? Eu resolvo os dois.</h2>
+ <p style="color:var(--soft);margin:-12px 0 22px">Preço de lançamento para os 10 primeiros negócios. O domínio (ex.: seunegocio.com.br) fica no seu nome e é registrado à parte, cerca de R$ 40 por ano.</p>
+ <div class="dois">
+  <div class="op"><div class="rot">Não tenho site</div><h3>Site Novo</h3><div class="preco">R$ 500 <small>pagamento único</small></div>
+   <ul><li>Site com a cara da sua marca, feito para o celular</li><li>Botão do WhatsApp ou da sua agenda em toda a tela</li><li>Suas avaliações do Google em destaque</li><li>Mapa, rota e horários</li><li>Pronto para o Google e para o ChatGPT (SEO, GEO e AEO)</li><li><b>1 ano de hospedagem incluso</b></li></ul>
+   <a class="btn" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20o%20Site%20Novo.">Quero o Site Novo</a></div>
+  <div class="op escuro"><div class="rot">Já tenho, mas não ajuda</div><h3>Site Renovado</h3><div class="preco">R$ 500 <small>pagamento único</small></div>
+   <ul><li>Diagnóstico do seu site atual (velocidade e celular)</li><li>Visual novo, no mesmo endereço</li><li>Agendamento direto no WhatsApp</li><li>Abre em menos de 2 segundos no celular</li><li>Pronto para o Google e para o ChatGPT</li><li><b>1 ano de hospedagem incluso</b></li></ul>
+   <a class="btn" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20renovar%20meu%20site.">Quero renovar</a></div>
+ </div>
+</section>
+
+<section>
+ <div class="rot">Como funciona</div>
+ <h2 class="sec">Você só aprova. O resto é comigo.</h2>
+ <div class="passos">
+  <div class="passo"><h3>Prévia grátis</h3><p>Monto o seu site com o nome, as avaliações, as fotos e a cara da sua marca. Você vê pronto antes de decidir.</p></div>
+  <div class="passo"><h3>15 minutos seus</h3><p>Você me manda fotos, serviços e o que quer destacar. Eu escrevo os textos e trato as imagens.</p></div>
+  <div class="passo"><h3>No ar em 48 horas</h3><p>Site publicado no seu domínio, com 1 rodada de ajuste e 1 ano de hospedagem por minha conta.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="rot">Quem já confiou</div>
+ <h2 class="sec">Alguns negócios que já atendi</h2>
+ <div class="passos" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+  <div class="cli"><b>Concept Clinic Signature</b><span>Dr. Gustavo Aquino · clínica de cirurgia plástica e dermatologia · site</span></div>
+  <div class="cli"><b>Dra. Alice Osório</b><span>Saúde · página de links</span></div>
+  <div class="cli"><b>Fonte Boa Odontologia</b><span>Odontologia, Itaúna · página de links</span></div>
+  <div class="cli"><b>Leticia Alves</b><span>Design de interiores · site</span></div>
+  <div class="cli"><b>LocaGora</b><span>Franquia de motos · página de vendas</span></div>
+  <div class="cli"><b>Rio Sul Benefícios</b><span>Proteção veicular · página de planos</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="quem">
+  <div class="av" style="background:url(img/augusto.webp) center/cover"></div>
+  <div><div class="rot">Quem faz</div><h2 class="sec" style="margin-bottom:12px">Augusto Fonte, designer em Belo Horizonte</h2>
+  <p style="color:var(--soft)">Mais de 8 anos criando identidade visual, sites e anúncios. Mais de 300 anúncios e 2.000 peças entregues em 10 meses num único projeto. Uso inteligência artificial na produção para entregar rápido, mas cada detalhe passa pela minha mão.</p>
+  <a class="btn lin" href="https://augustofonte.com/">Ver meus sites no ar</a></div>
+ </div>
+</section>
+
+<section class="faq">
+ <div class="rot">Dúvidas</div>
+ <h2 class="sec">Perguntas comuns</h2>
+ <details><summary>Preciso ter fotos profissionais?</summary><p>Não. Uso as fotos que você já tem (inclusive as do Instagram) e trato cada uma para ficar bonita no site.</p></details>
+ <details><summary>Já tenho Instagram. Por que um site?</summary><p>O Instagram fala com quem já te segue. O site é para quem ainda não te conhece e está procurando no Google. Ele leva essa pessoa direto para o seu WhatsApp.</p></details>
+ <details><summary>E o endereço (domínio) e a hospedagem?</summary><p>O domínio .com.br fica no seu nome, registrado no registro.br (cerca de R$ 40 por ano), e eu te ajudo a fazer. A hospedagem do primeiro ano é por minha conta. Você não fica refém de ninguém.</p></details>
+ <details><summary>O que é "pronto para o ChatGPT"?</summary><p>Hoje muita gente pergunta ao ChatGPT ou ao Google "onde fazer tal serviço no meu bairro". O site sai com as informações organizadas do jeito que essas ferramentas leem: endereço, horários, serviços e respostas para as dúvidas comuns.</p></details>
+ <details><summary>Como é o pagamento?</summary><p>R$ 500 no Pix, ou 2x de R$ 250: metade para começar e metade na entrega.</p></details>
+ <details><summary>Posso mudar algo depois?</summary><p>Sim. Tem 1 rodada de ajuste incluída. Depois, mudanças pequenas são combinadas à parte.</p></details>
+</section>
+
+<div class="final"><h2>Quer ver como o seu ficaria?</h2><p>Me manda o nome do seu negócio. Em até 24 horas te mostro o seu site pronto.</p><a class="btn" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20ver%20a%20pr%C3%A9via%20do%20meu%20site.">Quero minha prévia grátis</a></div>
+<footer>Augusto Fonte · designer · Belo Horizonte, MG · (31) 99418-0977</footer>
+</div>
+<a class="flutua" href="https://wa.me/5531994180977?text=Oi%2C%20Augusto!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio.">WhatsApp</a>
+</body>
+</html>
